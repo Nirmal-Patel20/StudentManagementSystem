@@ -17,7 +17,7 @@ public :
 
     friend std::ostream& operator<< (std::ostream& os,const Student& src);
 
-    friend std::istream& operator>> (std::istream& is,const Student& src);
+    friend std::istream& operator>> (std::istream& is,Student& src);
 };
 
 #endif
