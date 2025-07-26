@@ -1,0 +1,14 @@
+# Ignore build output
+/build/*.exe
+
+# VSCode settings
+.vscode/*.json
+
+# CMake temporary files
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Ninja build files
+.ninja*
