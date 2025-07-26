@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.23)
-project(Project)
+project(StudentManagementSystem)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 23)
@@ -14,4 +14,4 @@ file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.cpp)
 file(GLOB_RECURSE HEADERS CONFIGURE_DEPENDS include/*.hpp include/*.h)
 
 # Create the executable
-add_executable(build ${SOURCES} ${HEADERS})
+add_executable(StudentManagementSystem ${SOURCES} ${HEADERS})
