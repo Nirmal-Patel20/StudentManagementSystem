@@ -18,6 +18,8 @@ public :
     friend std::ostream& operator<< (std::ostream& os,const Student& src);
 
     friend std::istream& operator>> (std::istream& is,Student& src);
+
+    int get_Student_ID () const;
 };
 
 #endif
