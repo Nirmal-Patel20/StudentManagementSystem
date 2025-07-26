@@ -4,7 +4,7 @@ build/
 
 # VSCode settings
 .vscode/
-vscode/
+
 
 # CMake temporary files
 CMakeFiles/
