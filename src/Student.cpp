@@ -1,7 +1,7 @@
 #include "Student.h"
 
-Student::Student (std::string_view name,int age,int student_ID,float GPA) : m_name(name), m_age(age), 
-                    m_student_ID(student_ID), m_GPA(GPA) {
+Student::Student (std::string_view name,int student_ID,int age,float GPA) : m_name(name), m_student_ID(student_ID),
+                    m_age(age), m_GPA(GPA) {
 
 }
 
