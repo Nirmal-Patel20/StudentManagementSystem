@@ -1,5 +1,6 @@
 # Ignore build output
-/build/*.exe
+build/
+*.exe
 
 # VSCode settings
 .vscode/*.json
