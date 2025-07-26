@@ -1,4 +1,5 @@
 #include <iostream>
+#include <include\Student.h>
 
 int main() {
 
