@@ -32,3 +32,7 @@ std::istream& operator>> (std::istream& is,Student& src){
     return is;
 
 }
+
+int Student::get_Student_ID () const {
+    return m_student_ID;
+}
