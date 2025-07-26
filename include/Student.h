@@ -2,6 +2,8 @@
 #define STUDENT_H
 
 #include <iostream>
+#include <string>
+#include <sstream>
 
 class Student {
     std::string m_name{"none"};
