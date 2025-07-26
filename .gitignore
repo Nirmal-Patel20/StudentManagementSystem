@@ -3,7 +3,7 @@ build/
 *.exe
 
 # VSCode settings
-.vscode/*.json
+vscode/
 
 # CMake temporary files
 CMakeFiles/
