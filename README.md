@@ -77,8 +77,8 @@ cmake --build build/ninja-release
  - It internally manages students using a class and a vector.
 
  - The program might:
-  - Add sample/hardcoded students
-  - Remove specific students
+   - Add sample/hardcoded students
+   - Remove specific students
 
  - Display current students to the console or write them to a file
  - When it exits, it saves all student data back to the file. 
@@ -89,14 +89,14 @@ cmake --build build/ninja-release
 ### Customize the Behavior
 - To modify the behavior:
 
- - Edit main.cpp and change which functions are called inside main()
+  - Edit main.cpp and change which functions are called inside main()
 
- - You can call:
-  - `addStudent(Student("name",ID,age,GPA))` to add a new student
-  - `removeStudentById(ID)` to remove student by ID
-  - `displayapp()` to print to console
-  - `StudentManager.system(filename)` to give filename to class
- - Everything is handled by the `StudentManager` class
+  - You can call:
+    - `addStudent(Student("name",ID,age,GPA))` to add a new student
+    - `removeStudentById(ID)` to remove student by ID
+    - `displayapp()` to print to console
+    - `StudentManager.system(filename)` to give filename to class
+  - Everything is handled by the `StudentManager` class
 > [!tip]
 > when use create `StudentManager.system(filename)` pass filename to it will use that file name
     
@@ -121,13 +121,13 @@ cmake --build build/ninja-release
 ## 📢 Status
 Project in progress ✅
 - Currently functional : 
- - add and remove Student
- - automatic loading and saving
+  - add and remove Student
+  - automatic loading and saving
 
 - future features may include:
- - [ ] Edit student details
- - [ ] Sort/filter features
- - [ ] More error handling
+  - [ ] Edit student details
+  - [ ] Sort/filter features
+  - [ ] More error handling
 
 ## 🧑‍💻 Author
 - Nirmal Patel — Aspiring C++ developer working on real-world practice projects before university.
