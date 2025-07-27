@@ -20,6 +20,8 @@ public :
     friend std::istream& operator>> (std::istream& is,Student& src);
 
     int get_Student_ID () const;
+
+    void display() const;
 };
 
 #endif
