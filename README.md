@@ -20,7 +20,7 @@ A simple console-based Student Management System built in C++ using Object-Orien
 
 ## 📁 Project Structure
 
-````StudentManagementSystem/
+```StudentManagementSystem/
 ├── include/
 │   ├── Student.h
 │   └── StudentManager.h
@@ -53,4 +53,14 @@ g++ src/*.cpp -o StudentApp.exe
 StudentApp.exe
 ```
 > Make sure your terminal path is inside the project root.
+
+### using Cmake(Linux/macOS/Window)
+
+```bash
+cmake --preset ninja-release
+cmake --build build/ninja-release
+.\build\ninja-release\StudentManagementSystem.exe 
+```
+> [!Note]
+> executable will be inside `build\ninja-release` named `StudentManagementSystem.exe`
     
