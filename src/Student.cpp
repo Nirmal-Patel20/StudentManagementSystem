@@ -36,3 +36,8 @@ std::istream& operator>> (std::istream& is,Student& src){
 int Student::get_Student_ID () const {
     return m_student_ID;
 }
+
+ void Student::display() const {
+    std::cout << "Name : " << m_name << ", Student_ID : " << m_student_ID << ", Age : " 
+                    << m_age << ", GPA : " << m_GPA << std::endl;
+ }
