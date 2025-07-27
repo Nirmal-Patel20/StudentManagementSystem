@@ -20,8 +20,7 @@ A simple console-based Student Management System built in C++ using Object-Orien
 
 ## 📁 Project Structure
 
-tree
 StudentManagementSystem
-    ->include
-        >Student.cpp
+    |->include
+        |->Student.cpp
     
