@@ -125,9 +125,9 @@ Project in progress ✅
  - automatic loading and saving
 
 - future features may include:
- - Edit student details
- - Sort/filter features
- - More error handling
+ - [] Edit student details
+ - [] Sort/filter features
+ - [] More error handling
 
 ## 🧑‍💻 Author
 - Nirmal Patel — Aspiring C++ developer working on real-world practice projects before university.
