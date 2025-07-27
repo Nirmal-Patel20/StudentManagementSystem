@@ -7,7 +7,7 @@ void StudentManager::load_file (){
 
     if(infile.is_open()){
         while(infile >> S1){
-        Students.push_back(S1);
+        Students.emplace_back(S1);
         }
     }else{
         std::cerr << "fail to open file : " << m_filename << std::endl;
@@ -41,15 +41,29 @@ void StudentManager::checkFileExits(){
 }
 
 void StudentManager::addStudent(const Student& src){
-    Students.push_back(src);
+    auto it = std::find_if(Students.begin(), Students.end(), [&]
+                (const Student& s){return s.get_Student_ID() == src.get_Student_ID();});
+
+    if(it != Students.end()){
+        std::cout << "Student : " << it->get_name() << " with ID : " << src.get_Student_ID() << 
+                " Already exits."<< std::endl;
+    }else{
+        std::cout << "Student : " << src.get_name() << " with ID : " << src.get_Student_ID() << 
+                " added successfuly."<< std::endl;
+        Students.push_back(src);
+    }
 }
 
-void StudentManager::removeStudentById(int Student_ID){
-    for(auto it = Students.begin(); it != Students.end();++it){
-        if(it->get_Student_ID() == Student_ID){
-            Students.erase(it);
-            break;
-        }
+void StudentManager::removeStudentById (int Student_ID){
+    auto originalsize = Students.size();
+
+    Students.erase(std::remove_if(Students.begin(), Students.end(),[Student_ID] 
+                    (const Student& s){return s.get_Student_ID() == Student_ID;}),Students.end());
+
+    if(Students.size() < originalsize){
+        std::cout << "Student remove successful. ID : " << Student_ID << std::endl;
+    }else{
+        std::cout << "Student don't exits with ID : " << Student_ID << std::endl;
     }
 }
 
