@@ -20,7 +20,7 @@ A simple console-based Student Management System built in C++ using Object-Orien
 
 ## 📁 Project Structure
 
-````Project/
+````StudentManagementSystem/
 ├── include/
 │   ├── Student.h
 │   └── StudentManager.h
@@ -33,6 +33,24 @@ A simple console-based Student Management System built in C++ using Object-Orien
 ├── DataStore.txt
 ├── .gitignore
 ├── CMakeLists.txt
-├── README.md```
+├── README.md
+```
 
+---
+
+## 🛠 How to Build & Run
+
+### Using g++ (Linux/macOS/WSL):
+
+```bash
+g++ src/*.cpp -o StudentApp
+./StudentApp
+```
+
+### using g++(window)
+```bash
+g++ src/*.cpp -o StudentApp.exe
+StudentApp.exe
+```
+> Make sure your terminal path is inside the project root.
     
