@@ -10,7 +10,9 @@ void StudentManager::load_file (){
         Students.push_back(S1);
         }
     }else{
-        std::cout << "fail to open file : " << m_filename << std::endl;
+        std::cerr << "fail to open file : " << m_filename << std::endl;
+        std::cerr << "[ERROR] : Program terminated due to Fatal Error" << std::endl;
+        std::exit(EXIT_FAILURE);
     }
 }
 
@@ -23,7 +25,18 @@ void StudentManager::save_file(){
             outfile << src << std::endl;
         }
     }else{
-        std::cout << "fail to open file : " << m_filename << std::endl;
+        std::cerr << "fail to open file : " << m_filename << std::endl;
+        std::cerr << "Program terminated due to Fatal Error" << std::endl;
+        std::exit(EXIT_FAILURE);
+    }
+}
+
+void StudentManager::checkFileExits(){
+    if(!std::filesystem::exists(m_filename)){
+        std::cerr << "[ERROR] : " << std::filesystem::current_path() <<
+                        " : file missing! : " << m_filename << std::endl;
+        std::cerr << "Program terminated due to Fatal Error" << std::endl;
+        std::exit(EXIT_FAILURE);
     }
 }
 

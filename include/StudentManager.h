@@ -4,6 +4,7 @@
 #include "Student.h"
 #include <vector>
 #include <fstream>
+#include <filesystem>
 
 class StudentManager {
     std::vector<Student>Students;
@@ -13,9 +14,12 @@ class StudentManager {
     
     void save_file ();
 
+    void checkFileExits ();
+
 public : 
 
     StudentManager (const std::string& filename) : m_filename(filename) {
+        checkFileExits();
         load_file();
     }
 
