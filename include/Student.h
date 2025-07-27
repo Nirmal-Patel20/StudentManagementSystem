@@ -19,6 +19,8 @@ public :
 
     friend std::istream& operator>> (std::istream& is,Student& src);
 
+    //getter
+    std::string get_name() const;
     int get_Student_ID () const;
 
     void display() const;

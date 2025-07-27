@@ -33,6 +33,10 @@ std::istream& operator>> (std::istream& is,Student& src){
 
 }
 
+std::string Student::get_name() const {
+    return m_name;
+}
+
 int Student::get_Student_ID () const {
     return m_student_ID;
 }
