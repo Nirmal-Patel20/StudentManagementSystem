@@ -84,7 +84,7 @@ cmake --build build/ninja-release
  - When it exits, it saves all student data back to the file. 
 
  > [!warning]
- > if filed named `DataStore.txt` does not exits in current directory, the program will terminate
+ > if file name `DataStore.txt` does not exits in current directory, the program will terminate
 
 ### Customize the Behavior
 - To modify the behavior:
