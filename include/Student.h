@@ -13,7 +13,7 @@ class Student {
 
 public : 
     Student () = default;
-    Student (std::string_view name,int age,int student_ID,float GPA);
+    Student (std::string_view name,int student_ID,int age,float GPA);
 
     friend std::ostream& operator<< (std::ostream& os,const Student& src);
 
