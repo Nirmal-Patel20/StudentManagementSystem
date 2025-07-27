@@ -20,7 +20,6 @@ A simple console-based Student Management System built in C++ using Object-Orien
 
 ## 📁 Project Structure
 
-StudentManagementSystem(click to expand)```
-StudentManagementSystem/ ├── include/ │ ├── Student.h │ └── StudentManager.h │ ├── src/ │ ├── main.cpp │ ├── Student.cpp │ └── StudentManager.cpp │ ├── DataStore.txt ├── .gitignore ├── CMakeLists.txt ├── README.md ```g
+<pre> <details> <summary><strong>📁 Project Structure (click to expand)</strong></summary> ``` StudentManagementSystem/ ├── include/ │ ├── Student.h │ └── StudentManager.h │ ├── src/ │ ├── main.cpp │ ├── Student.cpp │ └── StudentManager.cpp │ ├── DataStore.txt ├── .gitignore ├── CMakeLists.txt ├── README.md ``` </details> </pre>
 
     
