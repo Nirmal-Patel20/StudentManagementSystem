@@ -1,10 +1,10 @@
 #include <iostream>
 #include <Student.h>
-#include <StudentsManager.h>
+#include <StudentManager.h>
 
 int main() {
 
-    StudentsManager system("DataStore.txt");
+    StudentManager system("DataStore.txt");
 
     /*
     system.addStudent(Student("Nirmal",2012,19,3.9));
