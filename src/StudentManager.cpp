@@ -42,6 +42,6 @@ void StudentManager::removeStudentById(int Student_ID){
 
 void StudentManager::displayALL() {
     for(const Student& src : Students){
-        std::cout << src << std::endl;
+        src.display();
     }
 }
