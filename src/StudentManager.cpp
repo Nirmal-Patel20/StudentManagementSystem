@@ -35,8 +35,23 @@ void StudentManager::checkFileExits(){
     if(!std::filesystem::exists(m_filename)){
         std::cerr << "[ERROR] : " << std::filesystem::current_path() <<
                         " : file missing! : " << m_filename << std::endl;
-        std::cerr << "Program terminated due to Fatal Error" << std::endl;
-        std::exit(EXIT_FAILURE);
+        std::cout << std::endl;
+        std::cout << "would you like to create one[Y,N] : ";
+        char input;
+        std::cin >> input;
+        if(input == 'y' || input == 'Y'){
+            std::ofstream createdfile (m_filename);
+            if(!createdfile){
+                std::cerr << "fail to open file : " << m_filename << std::endl;
+                std::cerr << "Program terminated due to Fatal Error" << std::endl;
+                std::exit(EXIT_FAILURE);
+            }
+        }else{
+            std::cerr << "[ERROR] : " << std::filesystem::current_path() <<
+                        " : file missing! : " << m_filename << std::endl;
+            std::cerr << "Program terminated due to Fatal Error" << std::endl;
+            std::exit(EXIT_FAILURE);
+        }
     }
 }
 
