@@ -2,6 +2,7 @@
 #define STUDENTMANAGER_H
 
 #include "Student.h"
+#include "inputhandler.h"
 #include <vector>
 #include <fstream>
 #include <filesystem>
@@ -15,6 +16,8 @@ class StudentManager {
     void save_file ();
 
     void checkFileExits ();
+ 
+    Student gatherStudentData();
 
 public : 
 
@@ -27,11 +30,13 @@ public :
         save_file();
     }
 
-    void addStudent (const Student& src);
+    void addStudent ();
 
-    void removeStudentById (int Student_ID);
+    void removeStudent ();
 
     void displayALL();
+
+    void displayAll_more_details();
 };
 
 
