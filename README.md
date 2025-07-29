@@ -76,7 +76,7 @@ cmake --build build/ninja-release
 
  - It internally manages students using a class and a vector.
 
- - it is totaly console base now and just run program
+ - it is totaly console base now and you can just run program
 
  - Display current students to the console or write them to a file
  - When it exits, it saves all student data back to the file. 

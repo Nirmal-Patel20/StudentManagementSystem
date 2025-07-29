@@ -17,7 +17,7 @@ int main() {
         std::cout << std::string(40,'-') << std::endl;
         std::cout << "1. view Students List" << std::endl;
         std::cout << "2. Search StudentByID" << std::endl;
-        std::cout << "3. fill extra Student Detailts" << std::endl;
+        std::cout << "3. fill and edit extra Student Detailts" << std::endl;
         if(loginasAdmin){
             std::cout << "4. add Student" << std::endl;
             std::cout << "5. remove Student" << std::endl;
