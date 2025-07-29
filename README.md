@@ -14,8 +14,8 @@ A simple console-based Student Management System built in C++ using Object-Orien
 - Auto-load/save using constructors/destructors
 - Overloaded `<<` operator for flexible output (`std::cout`, `std::ofstream`)
 - Organized modular code structure
-- Minimal/no console interaction required — values are directly passed
-- Before running, the program checks whether a required file exists. if the file is missing, the program will terminate
+- MMenu-driven CLI(command-line-interface)
+- Before running, the program checks whether a required file exists. if the file is missing, either the program will terminate or ask to create one by itself
 
 ---
 
@@ -76,7 +76,7 @@ cmake --build build/ninja-release
 
  - It internally manages students using a class and a vector.
 
- - it is totaly console base now and you can just run program
+ - Menu-driven CLI(command-line-interface)
 
  - Display current students to the console or write them to a file
  - When it exits, it saves all student data back to the file. 
