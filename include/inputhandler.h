@@ -6,7 +6,7 @@
 
 bool isOnlynumber (const std::string& src);
 
-template <typename T> bool getvalidinput (T& input);
+bool getvalidGetlineString (std::string& input);
 
 template <typename T> bool getvalidinput (T& input) { //template defination must be in header
     std::cin >> input;
