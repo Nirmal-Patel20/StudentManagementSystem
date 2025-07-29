@@ -30,13 +30,17 @@ public :
         save_file();
     }
 
+    Student* searchStudentByID ();
+
+    void finishStudentdetails();
+
     void addStudent ();
 
     void removeStudent ();
 
     void displayALL();
 
-    void displayAll_more_details();
+    void Student_more_details();
 };
 
 
