@@ -76,29 +76,15 @@ cmake --build build/ninja-release
 
  - It internally manages students using a class and a vector.
 
- - The program might:
-   - Add sample/hardcoded students
-   - Remove specific students
+ - it is totaly console base now and just run program
 
  - Display current students to the console or write them to a file
  - When it exits, it saves all student data back to the file. 
 
  > [!warning]
- > if file name `DataStore.txt` does not exits in current directory, the program will terminate
+ > if file name `DataStore.txt` does not exits in current directory, the program will ask if you want
+ > to create automaticlly if permission decline program will terminate.
 
-### Customize the Behavior
-- To modify the behavior:
-
-  - Edit main.cpp and change which functions are called inside main()
-
-  - You can call:
-    - `addStudent(Student("name",ID,age,GPA))` to add a new student
-    - `removeStudentById(ID)` to remove student by ID
-    - `displayapp()` to print to console
-    - `StudentManager.system(filename)` to give filename to class
-  - Everything is handled by the `StudentManager` class
-> [!tip]
-> when use create `StudentManager.system(filename)` pass filename to it will use that file name
     
 ---
 
@@ -119,15 +105,15 @@ cmake --build build/ninja-release
 - Modular layout for clean version control
 
 ## 📢 Status
-Project in progress ✅
+Project is completed ✅
 - Currently functional : 
   - add and remove Student
   - automatic loading and saving
 
 - future features may include:
-  - [ ] Edit student details
-  - [ ] Sort/filter features
-  - [ ] More error handling
+  - [x] Edit student details (except Name,Student ID,Age)
+  - [x] More details of Students
+  - [x] find more details of specific Student if uploaded
 
 ## 🧑‍💻 Author
 - Nirmal Patel — Aspiring C++ developer working on real-world practice projects before university.
