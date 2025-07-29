@@ -19,6 +19,7 @@ bool loginstatus (){
                         if(password == "admin7720"){
                             Authentication = true;
                             valid_input = true;
+                            std::cout << std::string(40,'-') << std::endl;
                             return true;
                         }else{
                             ++attempts;
@@ -34,6 +35,7 @@ bool loginstatus (){
             }else if (input == 'n' || input == 'N'){
                 std::cout << "loggged in with standard privileges." << std::endl;
                 valid_input = true;
+                std::cout << std::string(40,'-') << std::endl;
                 return false;
                 break;
             }else{
@@ -41,4 +43,5 @@ bool loginstatus (){
             }
         }
     }
+
 }
