@@ -67,7 +67,7 @@ void Student::set_extra_info(std::string_view email ,int college_year, float GPA
 
 void Student::display() const {
     std::cout << "Name : " << m_name << ", Student_ID : " << m_student_ID << ", Age : " 
-                    << m_age << ", GPA : " << m_GPA << std::endl;
+                    << m_age << std::endl;
 }
 
 void Student::display_detaild_info () const {
