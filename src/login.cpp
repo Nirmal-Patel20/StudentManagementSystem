@@ -19,6 +19,7 @@ bool loginstatus (){
                         if(password == "admin7720"){
                             Authentication = true;
                             valid_input = true;
+                            std::cout << "loggged in with full privileges." << std::endl;
                             std::cout << std::string(40,'-') << std::endl;
                             return true;
                         }else{
