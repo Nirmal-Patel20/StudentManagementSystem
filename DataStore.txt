@@ -1,3 +1,3 @@
-Nirmal,2012,19,3.
-Janvi,2312,20,3.
-Shruti,7778,22,3.
+Nirmal Patel,201206,19,nirmalpatel1206@gmail.com,2,3.5.
+Chirag,772212,30,not given,0,0.
+janvi Patel,221206,20,not given,0,0.
