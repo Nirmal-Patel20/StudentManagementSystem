@@ -71,15 +71,18 @@ cmake --build build/ninja-release
 ---
 
 ## 📚 How to Use the Program
- ### Program Behavior
- - The app automatically loads existing student data from a file (`DataStore.txt`) on startup.
 
- - It internally manages students using a class and a vector.
-
- - Menu-driven CLI(command-line-interface)
-
- - Display current students to the console or write them to a file
- - When it exits, it saves all student data back to the file. 
+### 🖥️ Program Flow
+1. The app automatically loads existing student data from a file (`DataStore.txt`) on startup.
+2. Simulated login screen (enter any username to continue)
+3. Menu displayed:
+   - 1️⃣ Add Student
+   - 2️⃣ Display All Students
+   - 3️⃣ Search by ID
+   - 4️⃣ Delete by ID
+   - 5️⃣ Exit
+4. All operations happen in memory using `std::vector<Student>`
+5. Changes are written back to `students.txt` only when exiting
 
  > [!warning]
  > if file name `DataStore.txt` does not exits in current directory, the program will ask if you want
