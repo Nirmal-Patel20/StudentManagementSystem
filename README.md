@@ -61,6 +61,8 @@ StudentApp.exe
 ### using Cmake(Linux/macOS/Window)
 
 ```bash
+git clone https://github.com/Nirmal-Patel20/StudentManagementSystem.git
+cd StudentManagementSystem
 cmake --preset ninja-release
 cmake --build build/ninja-release
 .\build\ninja-release\StudentManagementSystem.exe 
@@ -76,11 +78,12 @@ cmake --build build/ninja-release
 1. The app automatically loads existing student data from a file (`DataStore.txt`) on startup.
 2. Simulated login screen (enter any username to continue)
 3. Menu displayed:
-   - 1️⃣ Add Student
-   - 2️⃣ Display All Students
-   - 3️⃣ Search by ID
-   - 4️⃣ Delete by ID
-   - 5️⃣ Exit
+   - 1️⃣ view Student List
+   - 2️⃣ Search by ID
+   - 3️⃣ Edit or fill extra details
+   - 4️⃣ add Student
+   - 5️⃣ remove Student
+   - 6️⃣ Exit
 4. All operations happen in memory using `std::vector<Student>`
 5. Changes are written back to `students.txt` only when exiting
 
